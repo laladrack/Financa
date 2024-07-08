@@ -1,15 +1,17 @@
+//Maria Julia Lourenço Marques
+
 public class Financiamento {
-    double valorImovel;
-    int prazoFinanciamento;
-    double taxaJurosAnual;
+    public double valorImovel;
+    public int prazoFinanciamento;
+    public double taxaJurosAnual;
 
     double PagamentoMensal;
     double PagamentoTotal;
 
-    public void Carro(v, p, t){
-        valorImovel = v;
-        prazoFinanciamento = p;
-        taxaJurosAnual = t;
+    public Financiamento(v, p, t){
+        this.valorImovel = v;
+        this.prazoFinanciamento = p;
+        this.taxaJurosAnual = t; 
     }
     public void CalculoMensal(){
         PagamentoMensal = (valorImovel/(prazoFinanciamento*12))*(1 + (taxaJurosAnual/12));
